@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css">
+    <link rel="stylesheet" href="CSS/certificate.css">
+    
+
+</head>
+<body>
+
+    <nav class="navbar navbar-light navbar-expand-md">
+        <div  class="container-fluid"><a class="navbar-brand" href="#">Fight <span class="red-color"> Covid.</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="navbar-dark visually-hidden"></span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav container-margin">
+                    <li class="nav-item margin-left"><a class="nav-link hover-color" href="homepage.html">Home</a></li>
+                    <li class="nav-item margin-left"><a class="nav-link hover-color" href="about.html">ABOUT</a></li>
+                    <li class="nav-item margin-left"><a class="nav-link hover-color" href="prevention.html">Prevention</a></li>
+                    <li class="nav-item margin-left"><a class="nav-link hover-color" href="table.html">Vaccine</a></li>
+                    <li class="nav-item margin-left"><a class="nav-link hover-color" href="certificate.html">CERTIFICATE</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="heading">
+        <h2 class="animation" data-text="CERTIFICATE">CERTIFICATE</h2>
+      </div>
+
+    <div class="box-container box-add">
+        <div id="getOTP">
+            <input type="number" id="phonenumber" class="input-box" placeholder="Enter your phone number">
+        <div class="box-container btn-mar">
+            <button onclick="getOTP()" type="submit" name="submit" class="btn btn-clr" >Verify Phone</button>
+        </div>
+        </div>
+        
+        <div id="verifyOTP">
+            <input type="number" id="otp" placeholder="Enter OTP">
+        <div class="box-container btn-mar">
+            <button onclick="verifyOTP()" type="submit" name="submit" class="btn btn-clr">Enter OTP</button>
+        </div>
+        </div>
+        
+        <div id="hide">
+            <input type="number" id="beneficary" placeholder="Enter beneficiary id">
+        <div class="box-container btn-mar">
+            <button type="submit" onclick="download()" class="btn btn-clr">Download Certificate</button>
+        </div>
+        </div>
+        
+        
+</div>
+    <script src="JS/certificate.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+</body>
+</html>
